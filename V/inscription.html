@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="V/style.css"/>
+		<title>Inscription</title>
+	</head>
+		<?php include 'V/menu.php'; ?>
+	<body>
+		<form method="post" action="index.php?controle=inscription&action=ident">
+			<div class="container">
+				<label for="pseudo"><b>Pseudo</b></label></br>
+				<input autocapitalize="words" type="text" name="pseudo" placeholder="Login" required></br>
+				<label for="email"><b>E-mail </b><b style="font-style:italic" style="diplay:none">(Un email de confirmation vous sera envoyé à cette adresse)</b></label></br>
+				<input type="email" name="mail" placeholder="Email" required></br>
+				<label for="password"><b>Password </b><b style="font-style:italic" style="diplay:none">(Votre mot de passe doit contenir au moins 8 caractères et inclure un chiffre)</b></label></br>
+				<input type="password" name="psw" placeholder="Password" required> </br>
+				<label for="password"><b>Confirmation Password</b></label></br>
+				<input type="password" name="psw1" placeholder="Confirmation" required></br>
+				<button type="submit" class="registerbtn" value="Register">Register</button></br></br>
+				<a href="index.php?controle=connect&action=ident" class="inscriptionbtn">Deja inscrit?</a>
+			</div>
+		</form>
+			<?php include 'V/footer.html'; ?>
+	</body>
+</html>

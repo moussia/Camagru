@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="V/style.css"/>
+		<title>Connexion</title>
+	</head>
+	<?php include 'V/menu.php'; ?>
+	<body>
+		<form method="post" action="index.php?controle=connect&action=ident">
+			<div class="container">
+				<label for="email"><b>E-mail</b></label></br>
+					<input type="email" placeholder="Enter E-mail" name="mail" required></br>
+				<label for="psw"><b>Password</b></label></br>
+					<input type="password" placeholder="Enter Password" name="psw" required></br>
+					<button type="submit" class="registerbtn" value="submit">Login</button>
+			</div>
+			<div class="container">
+				<a href="index.php?controle=inscription&action=ident" class="inscriptionbtn">Subscribe</a>
+				<a href="index.php?controle=connect&action=forget_psw" class="inscriptionbtn">Forgot Password?</a>
+			</div>
+		</form>
+		<!--<h4 class="hidden" style="display: none">Mauvais Mot de passe ou Identifiant.</h4></br></br>-->
+		<?php include 'V/footer.html'; ?>
+	</body>
+</html>

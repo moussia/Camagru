@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="V/style.css"/>
+		<title>Mes Informations</title>
+	</head>
+	<?php include 'V/menu.php'; ?>
+	<body>
+		<form class="form_modify" method="post" action="index.php?controle=param&action=modif_pseudo">
+			<div class="container" id="modif_form">
+				<h1>MES INFORMATIONS</h1>
+				<p>N'hésitez pas à modifier vos coordonnées ci-dessous pour que votre compte soit parfaitement à jour.</p>
+				<p>Pseudo :</p>
+				<input type="text" name="pseudo" id="pseudo" value="<?php echo(htmlspecialchars($_SESSION['profil']['pseudo'])) ;?>" /> <br/>
+				<p>Mail :</p>
+				<input type="email" name="mail" id="mail" value="<?php echo(htmlspecialchars($_SESSION['profil']['mail'])) ;?>"  /><br/>
+				<button type="submit" class="registerbtn" value="Register">Sauvegarder</button>
+			</div>
+		</form>
+
+		<form method="post" action="index.php?controle=confirmation&action=notif">
+			<div>
+				<input type="checkbox" id="subscribeNews" name="notif" value="1" <?php echo $_SESSION['profil']['notification'] ? "checked" :  "" ?> >
+				<label for="subscribeNews">Souhaitez-vous recevoir des notifications ?</label>
+			</div>
+			<div>
+				<button type="submit">S'abonner</button>
+			</div>
+		</form>
+
+		<a href="index.php?controle=param&action=delete_account">Supprimer mon compte</a>
+		<?php include 'V/footer.html'; ?>
+	</body>
+</html>

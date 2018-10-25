@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="V/style.css"/>
+		<title>Delete Acoount</title>
+	</head>
+	<?php include 'V/menu.php'; ?>
+	<body>
+		<form  method="post" action="index.php?controle=param&action=delete_compte">
+			<div class="container">
+				<input type="password" name="password" placeholder="Passord" required /><br/>
+				<button type="submit" class="delete_compte" value="delete">Delete</button>
+			</div>
+		</form>
+	<?php include 'V/footer.html'; ?>
+	</body>
+</html>

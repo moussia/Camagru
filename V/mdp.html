@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="V/style.css"/>
+		<title>Changer Mot De Passe</title>
+	</head>
+	<?php include 'V/menu.php'; ?>
+	<body>
+		<form class="form_modify" method="post" action="index.php?controle=param&action=modif_psw">
+			<div class="container">
+				<h1>CHANGER LE MOT DE PASSE</h1>
+				<p>N'hésitez pas à mettre à jour votre mot de passe pour que votre compte soit toujours sécurisé</p>
+				<p>Mot de passe actuel :</p>
+				<input type="password" name="old_psw" id="old_psw" required/>
+				<p>Nouveau mot de passe :</p>
+				<input type="password" name="new_psw" id="myInput" required/>
+				</br>
+				<input type="checkbox" onclick="myFunction()">Show Password
+				<ul>
+					<li>8 caractères minimum</li>
+					<li>1 chiffres requis </li>
+				</ul>
+				<button type="submit" class="registerbtn" value="Register">Sauvegarder Le Mot De Passe</button>
+				<!--<a href="index.php?controle=param&action=modif_mdp" class="inscriptionbtn">Sauvegarder Le Mot De Passe</a>-->
+			</div>
+		</form>
+		<?php include 'V/footer.html'; ?>
+	</body>
+</html>
+
+
+<script>
+function myFunction() {
+	var x = document.getElementById("myInput");
+	if (x.type === "password")
+		x.type = "text";
+	else
+		x.type = "password";
+}
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="V/style.css"/>
+		<title>Forget Password</title>
+	</head>
+	<?php include 'V/menu.php'; ?>
+	<body>
+		<form method="post" action="index.php?controle=connect&action=forget">
+			<div class="container">
+					<input type="email" placeholder="Enter E-mail" name="mail" required/></br>
+					<button type="submit" class="registerbtn" value="submit">Réinitialiser votre mot de passe</button>
+			</div>
+	<!--<script>
+		alert('Message envoyer! Regarder votre mail!');
+	</script>-->
+		</form>
+		<?php include 'V/footer.html'; ?>
+	</body>
+</html>

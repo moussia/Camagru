@@ -1,0 +1,396 @@
+body {
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-family: Optima, sans-serif;
+	background-color:#E6DEF0;;
+}
+/*
+form {
+}*/
+
+.container {
+/*text-align:center;
+*/	padding: 16px;
+}
+textarea#test {
+	resize: none;
+	width: 300px;
+}
+
+.author_img{
+	text-align:center;
+	background-color:#FFF0F5;
+}
+
+.af{
+	background-color:#FFE4E1;
+	color: black;
+}
+.pseudo_img{
+	background-color:black;
+	color: white;
+}
+
+.like_img
+{
+	background-color:#778899;
+	color:black;
+}
+.commentaire{
+	  word-wrap: break-word;
+}
+/****************************GALERY********************************/
+.galery_img{
+	transition: all 0.5s ease;
+}
+
+.galery_img:hover{
+	/* L'image est grossie de 25% */
+	transform:scale(1.25);
+}
+
+/****************************FORMULAIRE MODIF********************************/
+
+#form_modify{
+	border: 3px solid #f1f1f1;
+	text-align:center;
+	/*border:1px solid #DF3F3F;*/
+}
+
+.modif_form{
+	border: 3px solid #f1f1f1;
+	text-align:center;
+
+}
+
+/****************************BOUTON & INPUT********************************/
+input[type=email], input[type=password], input[type=text] {
+	width: 10%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.register{
+	background-color:#4C0630;
+	cursor: pointer;
+	border: none;
+	color: white;
+	width: 30%;
+}
+
+.delimage
+{
+	background-color:#E6E6FA;
+	border: none;
+	cursor:pointer;
+	float:right;
+}
+
+.registerbtn {
+	background-color: #4CAF50;
+	width: 10%;
+	color: white;
+	padding: 10px 18px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	text-decoration:none;
+/*	width: 100%;*/
+}
+
+button:hover, .inscriptionbtn:hover {
+	opacity: 0.8;
+}
+
+.inscriptionbtn {
+	text-decoration:none;
+	color:white;
+	width: auto;
+	padding: 10px 18px;
+	background-color:#4C0630;
+}
+
+.delcom{
+	font-style:italic;
+	background-color:#E6DEF0;;
+	border:0px;
+	cursor:pointer;
+}
+
+.delete_compte{
+	background-color: #8B0000;
+	width: 10%;
+	color: white;
+	padding: 10px 18px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	text-decoration:none;
+}
+/***********************************MENU**********************************/
+#menu {
+	overflow:hidden;
+	background-color: #4C0630;
+	width:100%;
+}
+
+#menu ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+}
+/*
+.gauche_menu{
+	float:right;
+	padding-left: 250px;
+}
+*/
+#menu li {
+	float:left;
+	margin:auto;
+	padding:0;
+	background-color: #4C0630;
+}
+#menu li a {
+	display:block;
+	width:100px;
+	color:white;
+	text-decoration:none;
+	padding:15px 16px;
+}
+/*
+#menu a:hover {
+	background-color: #B86FAF;
+	color: black;
+}
+*/
+#menu ul li ul {
+	display:none;
+}
+
+#menu ul li:hover ul {
+	display:block;
+}
+
+#menu li:hover ul li {
+	float:none;
+}
+
+#menu li ul {
+	position:absolute;
+}
+
+.try{
+	padding: 0 0.5em;
+}
+/***********************************FOOTER**********************************/
+#footer {
+	background-color:#4C0630;
+/*	bottom:0;
+*/	width: 99.9%;
+	color: white;
+	height:50px;
+	text-align: center;
+	font-size: 15px;
+	clear : both;
+}
+
+#droite_foo p{
+	padding-right:50px;
+	color:white;
+	float: right;
+}
+
+#gauche_foo p {
+	padding-left:50px;
+	color:white;
+	float:left;
+}
+/***********************************FOOTER**********************************/
+#active_left{
+	float:right;
+}
+
+h4.hidden{
+	padding:16px;
+	visibility: hidden;
+	color:pink;
+}
+
+.hidden{
+	visibility: hidden;
+	display:none;
+	color:pink;
+}
+
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+
+div.gallery {
+	border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+}
+/*
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+*/
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 19.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.items
+{
+	float:right;
+	position:relative;
+	margin-top: -15%;
+}
+
+.snap
+{
+	position: absolute;
+	z-index: 2;
+}
+
+.context{
+	position:relative;
+}
+
+.videos{
+	z-index: 1;
+}
+
+#fil{
+	background-color: #E6E6FA;
+}
+
+
+/*IMAGESSSSSSSSSSSSSSSSSSSSS*/
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
