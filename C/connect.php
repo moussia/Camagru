@@ -57,6 +57,10 @@ function forget()
 			$hash = password_hash($pass, PASSWORD_DEFAULT);
 			$req->execute(array($hash, $_POST["mail"]));
 			require 'V/forget_psw.html';
+		?>	<script type="text/javascript">
+			alert('E-mail envoye !');
+			</script>
+		<?php
 		}
 		else
 		{
