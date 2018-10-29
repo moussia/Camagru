@@ -60,7 +60,7 @@ function send_mail($pseudo, $mail)
 	$data = $req->fetch();
 	
 	$subject = 'Confirmation du compte -Camagru-!';
-	$message = 'Bonjour, ' . $pseudo  . ' Pour valider votre compte, veuillez cliquer sur le lien ci dessous : http://localhost:8080/supprimer/index.php?r='.$data['id']. '&controle=accueil&action=home';
+	$message = 'Bonjour, ' . $pseudo  . ' Pour valider votre compte, veuillez cliquer sur le lien ci dessous : http://localhost:8080/Camagru/index.php?r='.$data['id']. '&controle=accueil&action=home';
 	mail($mail, $subject, $message); //, implode("\r\n", $headers));
 	require 'V/Confirmation.php';
 
