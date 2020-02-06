@@ -21,6 +21,10 @@ Nous devons implémenter, à mains nues (les frameworks sont interdits), les fon
 
 <img width="632" alt="inscription" src="https://user-images.githubusercontent.com/24608242/73950797-d32b2500-48fc-11ea-9132-5dd8f523bcb1.png">
 
+## Page Webcam
+
+<img width="1270" alt="webcam" src="https://user-images.githubusercontent.com/24608242/73954484-2f447800-4902-11ea-8b3c-77242a16530f.png">
+
 ## Accueil
 
 <img width="1424" alt="camagru" src="https://user-images.githubusercontent.com/24608242/73950806-d6261580-48fc-11ea-9dac-fd461de516d1.png">
