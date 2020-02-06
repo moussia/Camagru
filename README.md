@@ -28,4 +28,4 @@ Nous devons implémenter, à mains nues (les frameworks sont interdits), les fon
 
 ## Note obtenu
 
-
+<img width="874" alt="Capture d’écran 2020-02-06 à 16 52 44" src="https://user-images.githubusercontent.com/24608242/73953887-5189c600-4901-11ea-8228-64790d62adaa.png">
