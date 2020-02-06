@@ -25,15 +25,6 @@ Nous devons implémenter, à mains nues (les frameworks sont interdits), les fon
 
 <img width="1424" alt="camagru" src="https://user-images.githubusercontent.com/24608242/73950806-d6261580-48fc-11ea-9dac-fd461de516d1.png">
 
-## Profil de l'utilisateur
-
-
-
-## Page de notification
-
-
-## Recherche
-
 
 ## Note obtenu
 
