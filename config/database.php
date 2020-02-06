@@ -1,16 +1,13 @@
 <?php
 
 $DB_DSN = "localhost";
-$DB_USER = "root";
-$DB_PASSWORD = "000000";
-//$DB_USER = "moussia";
-//$DB_PASSWORD = "0000";
+$DB_USER = "my_name";
+$DB_PASSWORD = "my_password";
 $DB_NAME = "camagru";
 
 try
 {
-//	$bdd = new PDO('mysql:host=localhost;dbname=camagru;charset=utf8', 'moussia', '0000');
-	$bdd = new PDO('mysql:host=localhost;dbname=camagru;charset=utf8', 'root', '000000');
+	$bdd = new PDO('mysql:host=localhost;dbname=camagru;charset=utf8', $DB_USER, $DB_PASSWORD);
 	$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$bdd->exec("SET NAMES 'UTF8'");
 }
