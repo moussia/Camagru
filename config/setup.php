@@ -2,8 +2,7 @@
 require 'database.php';
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=camagru;charset=utf8', 'root', '000000');
-	//$bdd = new PDO($DB_DSN, $DB_USER, $DB_PASSWORD);
+	$bdd = new PDO('mysql:host=localhost;dbname=camagru;charset=utf8', 'my_name', 'my_password');
 	$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$bdd->exec("SET NAMES 'UTF8'");
 	$bdd->query("DROP DATABASE IF EXISTS camagru");
