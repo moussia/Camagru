@@ -1,6 +1,6 @@
 # Camagru
 
-Projet de l'école 42.
+Projet de l'école 42
 
 # Description
 
